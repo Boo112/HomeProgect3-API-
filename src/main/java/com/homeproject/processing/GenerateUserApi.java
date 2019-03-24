@@ -17,24 +17,24 @@ public class GenerateUserApi {
     private Random random = new Random();
 
     // Получение данных о пользователе из "https://randomuser.me/api/"
-    public User getUserFromJSON(StringBuffer temp, int count) {
+    public User getUserFromJSON(StringBuffer httpResponse, int count) {
 
         User user = new User();
-        JsonElement jsonTree = new JsonParser().parse(temp.toString());
+        JsonElement jsonTree = new JsonParser().parse(httpResponse.toString());
         JsonElement results = jsonTree.getAsJsonObject().get("results");
-        JsonElement name = getArrayObject(results, "name");
-        JsonElement firstName = getValue(name, "first");
-        JsonElement lastName = getValue(name, "last");
-        JsonElement gender = getArrayObject(results, "gender");
-        JsonElement nationality = getArrayObject(results, "nat");
-        JsonElement location = getArrayObject(results, "location");
-        JsonElement state = getValue(location, "state");
-        JsonElement city = getValue(location, "city");
-        JsonElement street = getValue(location, "street");
-        JsonElement index = getValue(location, "postcode");
-        JsonElement dob = getArrayObject(results, "dob");
-        JsonElement age = getValue(dob, "age");
-        JsonElement dateOfBirth = getValue(dob, "date");
+        JsonElement name = parserFromJson.getArrayObject(results, "name");
+        JsonElement firstName = parserFromJson.getValue(name, "first");
+        JsonElement lastName = parserFromJson.getValue(name, "last");
+        JsonElement gender = parserFromJson.getArrayObject(results, "gender");
+        JsonElement nationality = parserFromJson.getArrayObject(results, "nat");
+        JsonElement location = parserFromJson.getArrayObject(results, "location");
+        JsonElement state = parserFromJson.getValue(location, "state");
+        JsonElement city = parserFromJson.getValue(location, "city");
+        JsonElement street = parserFromJson.getValue(location, "street");
+        JsonElement index = parserFromJson.getValue(location, "postcode");
+        JsonElement dob = parserFromJson.getArrayObject(results, "dob");
+        JsonElement age = parserFromJson.getValue(dob, "age");
+        JsonElement dateOfBirth = parserFromJson.getValue(dob, "date");
 
         user.setFirstName(parserFromJson.getFormatedData(firstName));
         user.setLastName(parserFromJson.getFormatedData(lastName));
@@ -55,14 +55,4 @@ public class GenerateUserApi {
         return user;
     }
 
-    private JsonElement getArrayObject(JsonElement array, String objectName) {
-        return array.getAsJsonArray().get(0).getAsJsonObject().get(objectName);
-    }
-
-    private JsonElement getValue(JsonElement object, String objectName) {
-        if (object.isJsonObject()) {
-            return object.getAsJsonObject().get(objectName);
-        }
-        return null;
-    }
 }

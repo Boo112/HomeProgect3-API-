@@ -124,4 +124,15 @@ public class ParserFromJsonHelper {
         return street.replaceAll(house,"");
     }
 
+    public JsonElement getArrayObject(JsonElement array, String objectName) {
+        return array.getAsJsonArray().get(0).getAsJsonObject().get(objectName);
+    }
+
+    public JsonElement getValue(JsonElement object, String objectName) {
+        if (object.isJsonObject()) {
+            return object.getAsJsonObject().get(objectName);
+        }
+        return null;
+    }
+
 }
