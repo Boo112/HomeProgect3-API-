@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10640f8c-c7bd-4d80-ad47-371a3fefcebd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/homeproject/helper/ParserFromJsonHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/helper/ParserFromJsonHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/homeproject/processing/GenerateUserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/processing/GenerateUserApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Users.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users.xls" beforeDir="false" afterPath="$PROJECT_DIR$/Users.xls" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/helper/ParserFromJsonHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="130" column="10" selection-start-line="130" selection-start-column="10" selection-end-line="130" selection-end-column="10" />
+            <state relative-caret-position="435">
+              <caret line="126" column="19" selection-start-line="126" selection-start-column="19" selection-end-line="126" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getFormatedDate#0;class#GenerateUserHelper#0" />
@@ -170,7 +171,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553468179448" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553468248659" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -223,12 +224,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553459980098</updated>
-      <workItem from="1553459981600" duration="7499000" />
+      <workItem from="1553459981600" duration="7645000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7499000" />
+    <option name="totallyTimeSpent" value="7645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
@@ -239,7 +240,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.19432624" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -249,7 +250,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.235461" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.235461" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -364,8 +365,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/helper/ParserFromJsonHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="130" column="10" selection-start-line="130" selection-start-column="10" selection-end-line="130" selection-end-column="10" />
+        <state relative-caret-position="435">
+          <caret line="126" column="19" selection-start-line="126" selection-start-column="19" selection-end-line="126" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getFormatedDate#0;class#GenerateUserHelper#0" />
